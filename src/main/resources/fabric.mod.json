@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "mythologymod",
+	"version": "${version}",
+	"name": "Mythology Mod",
+	"description": "Welcome to the Gods age!",
+	"authors": [
+		"ParDeus"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/mythologymod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.pardeus.mythologymod.MythologyMod"
+		],
+		"fabric-datagen": [
+			"net.pardeus.mythologymod.MythologyModDataGenerator"
+		],
+		"client": [
+			"net.pardeus.mythologymod.MythologyModClient"
+		]
+	},
+	"mixins": [
+		"mythologymod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.2",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
